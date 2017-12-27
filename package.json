@@ -1,0 +1,14 @@
+{
+    "name": "viuwi-editor",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Aurel Spanier <aurel-spanier@web.de>",
+    "contributors": [],
+    "dependencies": {}
+}

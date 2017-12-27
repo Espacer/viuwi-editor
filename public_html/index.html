@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>ViuWi-Editor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="lib/material-design-lite/material.min.css" rel="stylesheet" type="text/css">
+        <link href="src/css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">ViuWi-Editor</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="/Wysiwyg-Editor/index.html">ViuWi-Editor</a>
+                        <a class="mdl-navigation__link" href="README.md">Dokumentation</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">ViuWi-Editor</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/Wysiwyg-Editor/index.html">ViuWi-Editor</a>
+                    <a class="mdl-navigation__link" href="README.md">Dokumentation</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="wysiwyg-editor">
+                                <h3>Executing Commands</h3>
+                                <p>
+                                    When an HTML document has been switched to designMode, the document object
+                                    exposes the <code>execCommand</code> method which allows one to run commands
+                                    to manipulate the contents of the editable region. Most commands affect the
+                                    document's selection (bold, italics, etc), while others insert new elements
+                                    (adding a link) or affect an entire line (indenting). When using
+                                    <code>contentEditable</code>, calling <code>execCommand</code> will affect
+                                    the currently active editable element.
+                                </p>
+                            </div>
+                            <button type="button" id="create-editor" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" disabled>Create</button>
+                            <button type="button" id="destroy-editor" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Destroy</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="lib/material-design-lite/material.min.js" type="text/javascript"></script>
+        <script src="src/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
